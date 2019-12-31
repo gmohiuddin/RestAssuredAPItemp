@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.userapi.testCases.TC001_GET_All_Employees">
+        <methods>
+          <include name="checkRespondTime"/>
+          <include name="getAllEmployees"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.userapi.testCases.TC001_GET_All_Employees -->
+      <class name="com.userapi.testCases.TC002_GET__Single_Employee_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="getAllEmployee"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.userapi.testCases.TC002_GET__Single_Employee_Record -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
